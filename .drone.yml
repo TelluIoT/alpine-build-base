@@ -23,8 +23,7 @@ pipeline:
     image: plugins/docker:linux-arm
     dockerfile: Dockerfile-arm32v6
     repo: tellu/alpine-build-base
-    auto_tag: true
-    auto_tag_suffix: arm32v6
+    tags: arm32v6
     secrets: [ docker_username, docker_password ]
     when:
       platform: linux/arm
