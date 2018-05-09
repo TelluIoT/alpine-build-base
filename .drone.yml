@@ -20,7 +20,7 @@ pipeline:
   # Publish the arm32v6 docker container
   docker-arm32v6:
     group: docker
-    image: plugins/docker
+    image: plugins/docker:linux-arm
     dockerfile: Dockerfile-arm32v6
     repo: tellu/alpine-build-base
     auto_tag: true
